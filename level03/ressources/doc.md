@@ -9,6 +9,7 @@ We have a file with the -s instead of a -x in the owner column, this means that 
 https://dogbolt.org/
 
 ``c
+
 int main()
 {
     unsigned int v0;  // [bp-0xc]
@@ -20,6 +21,7 @@ int main()
     setresuid(v1, v1, v1);
     return system("/usr/bin/env echo Exploit me");
 }
+
 ``
 
 3. We can see that the echo is not called through the absolute path.
