@@ -21,3 +21,17 @@ function x($y, $z) {
 $r = x($argv[1], $argv[2]); 
 print $r;
 ?>
+
+
+
+echo "
+
+
+[x system(system(echo hello > /var/tmp/flag))]
+
+
+y("system(system(echo hello > /var/tmp/flag))")
+
+
+
+" > /var/tmp/input.txt

